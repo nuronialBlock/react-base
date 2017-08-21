@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Login from './Login';
 import Calculator from './Calculator';
+import { SignInDialog, WelcomeDialog } from './Border'
 import registerServiceWorker from './registerServiceWorker';
 
 function ListTodo(props) {
@@ -41,6 +42,8 @@ const wrapper = (
     <Login />
     <ListTodo todos={Todos} />
     <Calculator />
+    { WelcomeDialog() }
+    <SignInDialog name="Halum"/>
   </div>
 );
 
